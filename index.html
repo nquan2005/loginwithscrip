@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập tài khoản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .login-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .login-form {
+            width: 40%;
+            padding: 50px;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-form h1 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .forgot-password {
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .submit-group {
+            margin-top: 20px;
+        }
+
+        .submit-group input {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-group input:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-link {
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .ad-banner {
+            width: 60%;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OlIpbnRWXPq2Pevh_sRDJHRlrY6I_lVoSg&s'); /* Đường dẫn đến ảnh quảng cáo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <a href="#" class="back-link">&lt; Quay lại Trang chủ</a>
+            <h1>Đăng nhập</h1>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email đăng nhập</label>
+                    <input type="email" id="email" name="email" placeholder="Vui lòng nhập email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" placeholder="Vui lòng nhập mật khẩu">
+                    <a href="#" class="forgot-password">Quên mật khẩu</a>
+                </div>
+                <div class="submit-group">
+                    <input type="submit" value="Đăng nhập" class="btn-submit">
+                </div>
+                <p>Bạn chưa có tài khoản? <a href="#" class="signup-link">Đăng ký</a></p>
+            </form>
+        </div>
+        <div class="ad-banner"></div> <!-- Nơi chứa hình ảnh Avengers -->
+    </div>
+</body>
+</html>
